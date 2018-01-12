@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+  <link rel="stylesheet" href="dist/css/fonts.css">
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+<section class="container contacts-form">
+  <div class="contacts-form__form-wrapper">
+    <form class="contacts-form__form" id="sendformpopup" action="sendmail.php" method="post"  enctype="multipart/form-data">
+      <div class="contacts-form__wrapper-input">
+        <input class="contacts-form__input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
+      </div>
+      <div class="contacts-form__wrapper-input">
+        <input class="contacts-form__input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+      </div>
+      <div class="contacts-form__wrapper-input">
+        <input class="contacts-form__input" type="text" autocomplete="off" name="email" placeholder="Ваш email">
+      </div>
+      <div class="contacts-form__wrapper-input">
+        <input class="contacts-form__input" type="text" autocomplete="off" name="company" placeholder="Название компании">
+      </div>
+      <div class="contacts-form__wrapper-textarea">
+        <textarea class="contacts-form__textarea" name="comment" placeholder="Комментарий"></textarea>
+      </div>
+      <div class="contacts-form__wrapper-file">
+        <input id="file" autocomplete="off" type="file" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
+        <label class="upload-file" for="file"><span>Прикрепить файл</span></label>
+      </div>
+      <div class="contacts-form__wrapper-checkbox">
+        <input id="chk" type="checkbox" class="js-policy" checked><label for="chk">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
+      </div>
+      <div class="contacts-form__wrapper-button">
+        <button class="contacts-form__btn contacts-form__btn_red" name="submit" type="submit">Оставить отзыв</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="dist/js/lib.js"></script>
+<script src="dist/js/main.js"></script>
+</body>
+</html>
